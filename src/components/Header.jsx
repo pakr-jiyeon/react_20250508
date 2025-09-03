@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-
-const header_Nav = [
+const headerNav=[
   {
     title:"intro",
     url:"#intro",
@@ -21,31 +20,16 @@ const header_Nav = [
   {
     title:"contact",
     url:"#contact",
-
   },
-  {
-    title:"more",
-    url:"#more",
-  },
-  
 ]
-
 
 const Header = () => {
 
   const [show, setShow] = useState(false);
 
-  const toggleMenu = () => {
-    setShow((pshow) => !pshow);``
+  const toggleMenu =()=>{
+    setShow((pShow) => !pShow);
   }
-
-
-
-  //useState() : 훅 명력어 하나로 상태를 관리하는 명령어로 상태가 변경이되면 스스로 업데이트를 해주는 명령어입니다.
-
-  //show :현재값
-  //setShow : 상태를 업그레이드한 상태값
-
 
   return (
     <header id='header' role='banner'>
@@ -55,32 +39,26 @@ const Header = () => {
             portfolio <em>react</em>
           </a>
         </div>
-
-        <nav className={`header_nav ${show ? "show":""}`} role='navigation' aria-label='메인메뉴'>
-
-
+        <div className={`header_nav ${show ? "show":""}`}
+        role='navigation'
+        aria-label='800이상 메뉴'>
           <ul>
-
-            {header_Nav.map((nav,key)=>(
-              <li key={key}>
-                <a href={nav.url}>{nav.title}</a>
-              </li>
-            ))}
+            {headerNav.map((nav,key)=>(
+              <li key={key}><a href={nav.url}>{nav.title}</a></li>
+            ))}            
 
             
           </ul>
-        </nav>
-        <div 
-          className="header_nav_mobile" 
-          id='headerToggle' 
-          aria-controls='햄버거메뉴' 
+        </div>
+        <div className="header_nav_mob"
+          id='headerToggle'
           aria-expanded={show ? "true":"false"}
-          role='button' 
+          role='button'
           tabIndex="0"
           onClick={toggleMenu}
         >
-            <span></span>
-          </div>
+          <span></span>
+        </div>
       </div>
     </header>
   )
