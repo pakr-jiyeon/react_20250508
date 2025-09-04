@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../components/Header'
+import Skill from '../components/Skill'
 
 const Sub1 = () => {
   return (
-    <div>서브페이지1입니다.</div>
+    <>
+      <Header />
+      <Skill />
+    </>
   )
 }
 
