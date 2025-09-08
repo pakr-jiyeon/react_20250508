@@ -2,7 +2,6 @@
     @include position-fixed;
     z-index: 100;
 }
-
 .header_inner{
     @include flex-between;
     background-color: rgba(116,99,99,0.1);
@@ -14,6 +13,7 @@
         font-weight: 800;
         font-family: var(--mainNum-font);
         text-transform: uppercase;
+        
         a{
 
             em{
@@ -23,7 +23,6 @@
                 font-weight: normal;
             }
         }
-        
     }
     .header_nav{
 
@@ -36,13 +35,13 @@
                 ul{
                     position: absolute;
                     right: 0;
-                    top: 74px;
+                    top: 75px;
                     background-color: var(--subBg500);
                     text-align: center;
 
                     li{
                         display: block;
-
+                        
                         a{
                             margin: 0 10px;
                             color: var(--white);
@@ -50,7 +49,6 @@
                             &::before{
                                 background-color: var(--white);
                             }
-
                         }
                     }
                 }
@@ -62,9 +60,7 @@
             &.show + .header_nav_mob span::after{
                 width: 20px;
             }
-            
         }
-
 
         ul{
 
@@ -84,15 +80,14 @@
                         height: 1px;
                         background-color: var(--black);
                         position: absolute;
-                        bottom: 0;
                         left: 0;
+                        bottom: 0;
                         transform: scaleX(0);
                         transition: all 0.3s;
                     }
                     &:hover::before{
                         transform: scaleX(1);
                     }
-
                 }
             }
         }
@@ -103,10 +98,8 @@
         height: 40px;
         cursor: pointer;
 
-
         @media(max-width:800px){
             display: block;
-            
         }
         span{
             display: block;
@@ -134,10 +127,10 @@
                 position: absolute;
                 left: 0;
                 bottom: 6px;
+                transition: width 0.3s;
             }
         }
 
-
-
     }
+
 }

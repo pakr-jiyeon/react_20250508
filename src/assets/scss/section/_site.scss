@@ -7,37 +7,33 @@
         @media(max-width:800px){
             font-size: 30px;
             height: auto;
-
         }
-    
         position: sticky;
         top: 90px;
         left: 0;
         width: 70%;
         height: 5vw;
-        background-color: var(--mainBg-color);
         font-size: 3vw;
         font-family: var(--mainNum-font);
         text-transform: uppercase;
-
+        background-color: var(--mainBg-color);
+        
         em{
-            font-size: 20px;
+             font-size: 20px;
         }
     }
     .site_wrap{
 
         .site_item{
-
-            //박스 고정 : Site Conding <em>내 작품들</em>
+            //박스 고정
             height: 70vh;
             position: sticky;
             left: 0;
 
-            //자식들 정렬
+             // 자식들 정렬
             @include flex-center;
             flex-direction: column;
-
-            
+           
 
             &.s1{
                 background-color: var(--subBg100);
@@ -45,26 +41,24 @@
             }
             &.s2{
                 background-color: var(--subBg200);
-                top: 220px;
+                top: 200px;
             }
             &.s3{
                 background-color: var(--subBg300);
-                top: 260px;
+                top: 220px;
             }
             &.s4{
                 background-color: var(--subBg400);
-                top: 300px;
+                top: 240px;
             }
             &.s5{
                 background-color: var(--subBg500);
-                top: 340px;
+                top: 260px;
             }
             &.s6{
                 background-color: var(--subBg100);
-                top: 380px;
+                top: 280px;
             }
-            
-
 
             .num{
                 font-size: 5vw;
@@ -81,10 +75,9 @@
                     top: 20px;
                 }
             }
-
             .text{
-                margin-bottom: 20px;
-                
+                margin-bottom: 16px;
+
                 >div{
                     font-size: 3vw;
                     font-weight: 600;
@@ -96,7 +89,6 @@
                     @media(max-width:800px){
                         font-size: 25px;
                     }
-
                 }
             }
             .title{
@@ -107,11 +99,11 @@
 
                 &:hover{
                     color: var(--white);
-                    text-shadow: 1px 1px 1px var(--black300);
+                    text-shadow: 1px 1px 1px var(--black);
                 }
             }
             .btn{
-                
+
                 a{
                     text-transform: uppercase;
                     display: inline-block;
@@ -121,7 +113,6 @@
                         color: var(--white);
                         font-weight: 800;
                     }
-
                 }
             }
             .info{
@@ -131,20 +122,21 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
-                padding: 0 2%;
+                padding: 0 1%;
                 border-top: 1px solid var(--black);
                 border-bottom: 1px solid var(--black);
-                
-                span{
 
+                // width: 98%;
+                // background-color: var(--mainBg-color);
+                // margin-left: 1%;
+
+                span{
                     font-family: var(--mainKor-font);
                     font-size: 14px;
                     padding: 3px 0;
-
                 }
             }
         }
         
     }
-
 }

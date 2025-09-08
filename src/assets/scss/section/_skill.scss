@@ -1,23 +1,20 @@
 #skill{}
-
 .skill_inner{
     display: flex;
     justify-content: space-between;
     padding: 16px;
 
-    @media(max-width:800px) {
+    @media (max-width:800px){
         flex-direction: column;
-
     }
 
     .skill_title{
 
-        @media(max-width:800px) {
-            width: 100%;
-            font-size: 30px;
-            background-color: var(--mainBg-color);
-            top: 80px;
-
+        @media (max-width:800px){
+             width: 100%;
+             font-size: 30px;
+             background-color: var(--mainBg-color);
+             top: 80px;
         }
 
         width: 48%;
@@ -30,21 +27,17 @@
         top: 90px;
         left: 0;
 
-
         em{
             font-size: 20px;
         }
     }
-
     .skill_desc{
 
-        @media(max-width:800px) {
-            width: 100%;
+        @media (max-width:800px){
+             width: 100%;
         }
 
-        font-family: var(-mainNum-font);
         width: 50%;
-
         span{
             font-size: 5vw;
             font-weight: 800;
@@ -53,13 +46,12 @@
         }
         h3{
             font-size: 24px;
-            text-decoration: underline;
+            text-decoration:underline;
             margin-bottom: 1vw;
         }
         p{
             font-size: 18px;
             margin-bottom: 30vh;
         }
-
     }
 }
